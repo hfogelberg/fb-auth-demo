@@ -1,18 +1,5 @@
 # fb-auth-demo
 
-> A Vue.js project
+Demo of using Firebas authentication and Firebase UI in a Vue JS application.
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For a complete tutorial see [this](https://medium.com/@hfogelberg/authenticating-a-vue-js-application-with-firebase-ui-8870a3a5cff8) article on Medium.
