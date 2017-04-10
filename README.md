@@ -1,4 +1,4 @@
-# fb-auth-demo
+# Firebase Auth Demo
 
 Demo of using Firebas authentication and Firebase UI in a Vue JS application.
 
