@@ -25,13 +25,16 @@ export default {
      }
    },
    created() {
-    this.user = firebase.auth().currentUser;
-    if(this.user) {
-      this.name = this.user.displayName;
-      this.email = this.user.email;
-      this.photo = this.user.photoURL;
-      this.userId = this.user.uid;
-    }
+     var vm = this
+     firebase.auth().onAuthStateChanged(function(user) {
+       if (user) {
+         vm.user = user;
+         vm.name = vm.user.displayName;
+         vm.email = vm.user.email;
+         vm.photo = vm.user.photoURL;
+         vm.userId = vm.user.uid;
+      }
+    });
   },
   methods: {
     logOut() {
