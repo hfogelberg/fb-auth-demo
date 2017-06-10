@@ -16,7 +16,9 @@ new Vue({
       if(user) {
         this.$router.push('/success')
       } else {
-        this.$router.push('/auth')
+        if (this.$route.path !== '/auth') {
+          this.$router.push('/auth')
+        }
       }
      });
     },
